@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+
+#container {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#innerContainer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.component {
+  text-align: center;
+}
+
+#date {
+  padding-bottom: 4%;
+}
+
+svg {
+  fill: red;
+  stroke: black;
+  stroke-width: 4px;
+  transform: skew(-8deg);
+}
+
+svg .off {
+  opacity: 10%;
+}
