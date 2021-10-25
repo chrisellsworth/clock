@@ -25,12 +25,12 @@ body {
 }
 
 svg {
-  fill: red;
+  fill: rgba(255, 0, 0, 1.0);
   stroke: black;
   stroke-width: 4px;
   transform: skew(-8deg);
 }
 
 svg .off {
-  opacity: 10%;
+  fill: rgba(255, 0, 0 , 0.15);
 }

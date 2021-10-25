@@ -116,7 +116,7 @@ function createSpacer() {
 }
 
 function setupCharacter(character, digit) {
-  let bits = DIGITS[digit];
+  var bits = DIGITS[digit];
   if (!bits) {
     return;
   }
@@ -132,11 +132,11 @@ function setupCharacter(character, digit) {
 const string = "8888-88-88T88:88:88.888";
 
 const characters = [];
-let sawSpacer = false;
-for (let i = 0; i < string.length; ++i) {
-  let rawCharacter = string[i];
-  let bits = DIGITS[rawCharacter];
-  let displayCharacter;
+var sawSpacer = false;
+for (var i = 0; i < string.length; ++i) {
+  const rawCharacter = string[i];
+  const bits = DIGITS[rawCharacter];
+  var displayCharacter;
   if (bits) {
     displayCharacter = createCharacter();
   } else if (rawCharacter === ":") {
@@ -158,14 +158,14 @@ for (let i = 0; i < string.length; ++i) {
 }
 
 function setString(string) {
-  for (let i = 0; i < characters.length; ++i) {
+  for (var i = 0; i < characters.length; ++i) {
     setupCharacter(characters[i], string[i]);
   }
 }
 
 function update() {
-  let now = new Date();
-  let offset = new Date(now.getTime() - now.getTimezoneOffset() * 60 * 1000);
+  const now = new Date();
+  const offset = new Date(now.getTime() - now.getTimezoneOffset() * 60 * 1000);
   const string = offset.toISOString();
   setString(string);
   setTimeout(update, 100);
