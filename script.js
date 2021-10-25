@@ -62,7 +62,7 @@ function createCharacter() {
   createSegment(OFFSET, WIDTH); // G
 
   svg.setAttribute("height", "10%");
-  svg.setAttribute("width", "5%");
+  svg.setAttribute("width", "9%");
   svg.setAttribute("viewBox", `0 0 ${CHARACTER_WIDTH} ${CHARACTER_HEIGHT}`);
 
   return svg;
@@ -88,7 +88,7 @@ function createColon() {
   createCircle(HEIGHT, CHARACTER_HEIGHT / 2 + WIDTH / 2, svg);
 
   svg.setAttribute("height", "10%");
-  svg.setAttribute("width", "1.67%");
+  svg.setAttribute("width", "3%");
   svg.setAttribute("viewBox", `0 0 ${CHARACTER_WIDTH / 3} ${CHARACTER_HEIGHT}`);
 
   return svg;
@@ -100,7 +100,7 @@ function createDecimalPlace() {
   createCircle(HEIGHT, CHARACTER_HEIGHT - HEIGHT * 1.5, svg);
 
   svg.setAttribute("height", "5%");
-  svg.setAttribute("width", "1.67%");
+  svg.setAttribute("width", "3%");
   svg.setAttribute("viewBox", `0 0 ${CHARACTER_WIDTH / 3} ${CHARACTER_HEIGHT}`);
 
   return svg;
